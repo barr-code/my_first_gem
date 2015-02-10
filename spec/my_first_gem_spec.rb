@@ -1,11 +1,7 @@
 require 'spec_helper'
 
 describe MyFirstGem do
-  it 'has a version number' do
-    expect(MyFirstGem::VERSION).not_to be nil
-  end
-
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'tells the time' do
+    expect(MyFirstGem.time).to eq "It's #{Time.now}."
   end
 end
